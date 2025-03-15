@@ -1,0 +1,6 @@
+@CodeChallengeAPI_HostAddress = http://localhost:5016
+
+GET {{CodeChallengeAPI_HostAddress}}/ApplicationDetails/
+Accept: application/json
+
+###
