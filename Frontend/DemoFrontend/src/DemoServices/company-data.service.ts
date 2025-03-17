@@ -39,7 +39,7 @@ export class CompanyDataService {
     return this.httpClient.put(this.basePath + this.apiVersion + `Company/UpdateCompany`,  Company, httpOptions);
   }
 
-  public deleteCompanyByIsIn(id: number){
+  public deleteCompanyById(id: number){
     let httpOptions = this.getHeaders();
     return this.httpClient.delete(this.basePath + this.apiVersion + `Company/DeleteCompany/${id}`, httpOptions);
   }
