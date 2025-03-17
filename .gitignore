@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/CodeChallengeAPI/.vs/CodeChallengeAPI/copilot-chat/51f4564c/sessions
+
 /CodeChallengeAPI/CodeChallengeAPI/bin/Debug/net8.0
 /CodeChallengeAPI/CodeChallengeAPI/obj
 /CodeChallengeAPI/.vs
