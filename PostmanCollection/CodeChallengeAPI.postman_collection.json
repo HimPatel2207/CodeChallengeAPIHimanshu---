@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "ff55d3e6-0ea6-401f-8c7b-d88ee89d49c2",
+		"name": "CodeChallengeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5189772",
+		"_collection_link": "https://blue-satellite-195646.postman.co/workspace/New-Team-Workspace~9d8ea9f0-91ee-40e8-a68a-b64e32139aed/collection/5189772-ff55d3e6-0ea6-401f-8c7b-d88ee89d49c2?action=share&source=collection_link&creator=5189772"
+	},
+	"item": [
+		{
+			"name": "Cmpany",
+			"item": [
+				{
+					"name": "GetAllCompaniesList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageNo\": 1,\r\n  \"record\": \"5\",\r\n  \"sortBy\": \"Id\",\r\n  \"sortType\": \"asc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{LocalPath}}/{{APIVersion}}/Company/GetAllCompaniesList"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCompany",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 506,\r\n        \"name\": \"Heineken NV\",\r\n        \"exchange\": \"Euronext Amsterdam\",\r\n        \"ticker\": \"HEIA\",\r\n        \"isin\": \"NL0000009165\",\r\n        \"website\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{LocalPath}}/{{APIVersion}}/Company/UpdateCompany"
+					},
+					"response": []
+				},
+				{
+					"name": "AddCompany",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"name\": \"Porsche Automobil\",\r\n    \"exchange\": \"\",\r\n    \"ticker\": \"6752\",\r\n    \"isin\": \"JP3866800000\",\r\n    \"website\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{LocalPath}}/Company/AddNewCompany"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCompany",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 501,\r\n    \"name\": \"Apple Inc.\",\r\n    \"exchange\": \"NASDAQ\",\r\n    \"ticker\": \"AAPL\",\r\n    \"isin\": \"HP0378331005\",\r\n    \"website\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalPath}}/{{APIVersion}}/Company/DeleteCompany?Id=503",
+							"host": [
+								"{{LocalPath}}"
+							],
+							"path": [
+								"{{APIVersion}}",
+								"Company",
+								"DeleteCompany"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "503"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCompany By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalPath}}/{{APIVersion}}/Company/GetCompanyById?Id=508",
+							"host": [
+								"{{LocalPath}}"
+							],
+							"path": [
+								"{{APIVersion}}",
+								"Company",
+								"GetCompanyById"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "508"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCompany By IsIn",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalPath}}/{{APIVersion}}/Company/GetCompanyByIsin?IsIn=US1104193065",
+							"host": [
+								"{{LocalPath}}"
+							],
+							"path": [
+								"{{APIVersion}}",
+								"Company",
+								"GetCompanyByIsin"
+							],
+							"query": [
+								{
+									"key": "IsIn",
+									"value": "US1104193065"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "UserLogin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalPath}}/{{APIVersion}}/User/UserLogin?userName=Developer123&password=dev@Full$pqrs",
+							"host": [
+								"{{LocalPath}}"
+							],
+							"path": [
+								"{{APIVersion}}",
+								"User",
+								"UserLogin"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Developer123"
+								},
+								{
+									"key": "password",
+									"value": "dev@Full$pqrs"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
