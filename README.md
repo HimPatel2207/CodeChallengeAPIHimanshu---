@@ -42,7 +42,7 @@ write to a database.
   Only Company listed
 
 **Even more points:**
- Added authentication code to secure the api
-Added Logging 
-Added API Versioning 
-Repository pattern with EF Core DB Context.
+ Added **authentication** code to secure the api
+Added **Logging** 
+Added **API Versioning** 
+Repository pattern with **EF Core DB-Context**.
