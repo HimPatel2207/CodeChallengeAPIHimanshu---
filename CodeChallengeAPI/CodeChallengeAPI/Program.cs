@@ -13,6 +13,14 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+
+var logger = loggerFactory.CreateLogger<Program>();
+builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+builder.Logging.AddEventSourceLogger();
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
