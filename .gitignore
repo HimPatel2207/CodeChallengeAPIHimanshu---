@@ -7,3 +7,5 @@
 /CodeChallengeAPI/CodeChallengeAPI/obj
 /CodeChallengeAPI/.vs
 /Frontend/DemoFrontend/.vscode
+/CodeChallengeAPI/CodeChallenge.UnitTest/bin/Debug/net8.0
+/CodeChallengeAPI/CodeChallenge.UnitTest/obj
