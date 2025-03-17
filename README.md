@@ -44,7 +44,7 @@ write to a database.
   Only Company listed
 
 **Even more points:**
- Added **authentication** code to secure the api
-Added **Logging** 
-Added **API Versioning** 
-Repository pattern with **EF Core DB-Context**.
+1. Added **authentication** code using **JWT Auth Code**, Generate Berer **Token** using **userController/UserLogin** API  to secure the api
+2. Added **Logging** 
+3. Added **API Versioning** 
+4. Repository pattern with **EF Core DB-Context**.
