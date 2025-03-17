@@ -1,10 +1,10 @@
-# CodeChallengeAPIHimanshu
+# CodeChallengeAPIHimanshu  
 
-1 CodeChallengeAPI
-2 UnitTest Project
-3 Frontend Angular Application
+1 CodeChallengeAPI (\CodeChallengeAPI)
+2 UnitTest Project (\CodeChallengeAPI)
+3 Frontend Angular Application  (\Frontend)
 
-# Database
+# Database (\DB-Script)
 
 DBSchema
 DBSchemaAndData
@@ -15,7 +15,7 @@ Tables
   2. dbo.tbl_UserMaster
 No Stored Procedures, Using EF Core DB Context class.
 
-# Postman Collection For API Testing
+# Postman Collection For API Testing (\PostmanCollection) 
 
 1 CodeChallengeAPI.postman_collection.json
 2 CodeChallengeAPI.postman_environment.json
