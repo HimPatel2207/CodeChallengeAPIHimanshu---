@@ -23,7 +23,7 @@ No Stored Procedures, Using EF Core DB Context class.
 
 ------------ - - - - -------------------------------- - - - - - -- - -- - -  ---- -
 
-#Requirements Fullfil details.
+# Requirements Fullfil details.
 
 1. Create a Company record specifying the Name, Stock Ticker, Exchange, Isin, and optionally a website
 url. You are not allowed create two Companies with the same Isin. The first two characters of an ISIN
