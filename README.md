@@ -37,7 +37,7 @@ write to a database.
 7. Also designed the database and provided all SQL scripts and source
 
 **Bonus points:**
- Provided a client to call the api and present the results in a browser using Angular web technology.
+ Provided a client to call the api and present the results in a browser **using Angular web technology**.
   With only Company Data Listing and All other Services added like (Edit, Delete , Add) but not oprations added. 
   Only Company listed
 
